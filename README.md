@@ -40,7 +40,7 @@ pip install -r requirements.txt
 4. Создайте файл .env в корневой директории проекта и добавьте в него ваш API-ключ для Yandex Geocoding:
 
 ```.env
-APIKEY=ваш_api_ключ_здесь
+API_KEY=ваш_api_ключ_здесь
 ```
 
 5. Запустите приложение:
