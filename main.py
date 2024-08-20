@@ -5,9 +5,11 @@ import requests
 from flask import Flask
 from pprint import pprint
 from geopy import distance
+from dotenv import load_dotenv
 
+load_dotenv()
 
-API_KEY = os.environ['API_KEY']
+API_KEY = os.getenv('API_KEY')
 
 
 def fetch_coordinates(apikey, address):
