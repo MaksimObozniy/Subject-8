@@ -7,7 +7,6 @@ from geopy import distance
 from dotenv import load_dotenv
 
 
-load_dotenv()
 API_KEY = os.getenv('API_KEY')
 
 
@@ -41,6 +40,9 @@ def hello_world():
 
 
 def main():
+
+    load_dotenv()
+    
     with open("coffee.json", "r", encoding="CP1251") as my_file:
         file_contents = my_file.read()
         coffee_name = json.loads(file_contents)
