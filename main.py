@@ -6,8 +6,8 @@ from flask import Flask
 from geopy import distance
 from dotenv import load_dotenv
 
-load_dotenv()
 
+load_dotenv()
 API_KEY = os.getenv('API_KEY')
 
 
@@ -64,12 +64,10 @@ def main():
         }
         coffee_dict.append(coffee_list)
 
-   
     b = sorted(coffee_dict, key=get_name_distance)
 
     m = folium.Map(location=coords, zoom_start=12)
 
-  
     for i in range(5):
         folium.Marker(
             location=[b[i]['latitude'], b[i]['longtitude']],
@@ -78,13 +76,11 @@ def main():
             icon=folium.Icon(icon="cloud"),
         ).add_to(m)
 
-  
     m.save("index.html")
 
     app = Flask(__name__)
     app.add_url_rule('/', 'hello', hello_world)
     app.run('0.0.0.0')
 
-
 if __name__ == "__main__":
-  main()
+    main()
