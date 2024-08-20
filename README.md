@@ -21,7 +21,7 @@
 
 ```bash
 git clone https://github.com/MaksimObozniy/Subject-8.git
-cd guides_locator
+cd Subject-8
 ```
 
 2. Создайте виртуальное окружение:
