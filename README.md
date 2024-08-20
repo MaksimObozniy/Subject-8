@@ -15,27 +15,32 @@
 ```bash
 git clone https://github.com/ваш_пользователь/guides_locator.git
 cd guides_locator
+```
 
 2. Создайте виртуальное окружение:
 
 ```bash
 python -m venv venv
 source venv/bin/activate  # Для Windows используйте `venv\Scripts\activate`
+```
 
 3. Установите зависимости:
 
 ```bash
 pip install -r requirements.txt
+```
 
 4. Создайте файл .env в корневой директории проекта и добавьте в него ваш API-ключ для Yandex Geocoding:
 
 ```.env
 APIKEY=ваш_api_ключ_здесь
+```
 
 5. Запустите приложение:
 
 ```bash
 python main.py
+```
 
 6. Откройте приложение:
 
