@@ -21,7 +21,7 @@
 1. Клонируйте репозиторий:
 
 ```bash
-git clone https://github.com/ваш_пользователь/guides_locator.git
+git clone https://github.com/MaksimObozniy/Subject-8.it
 cd guides_locator
 ```
 
