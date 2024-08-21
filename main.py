@@ -6,9 +6,6 @@ from flask import Flask
 from geopy import distance
 from dotenv import load_dotenv
 
-load_dotenv()
-API_KEY = os.getenv('API_KEY')
-
 
 def fetch_coordinates(apikey, address):
     base_url = "https://geocode-maps.yandex.ru/1.x"
@@ -40,6 +37,9 @@ def hello_world():
 
 
 def main():
+
+    load_dotenv()
+    API_KEY = os.getenv('API_KEY')
     
     with open("coffee.json", "r", encoding="CP1251") as my_file:
         file_contents = my_file.read()
