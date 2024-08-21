@@ -39,14 +39,14 @@ def hello_world():
 def main():
 
     load_dotenv()
-    API_KEY = os.getenv('API_KEY')
+    api_key = os.getenv('API_KEY')
     
     with open("coffee.json", "r", encoding="CP1251") as my_file:
         file_contents = my_file.read()
         coffee_name = json.loads(file_contents)
 
     user_location = input("Где вы находитесь? ")
-    coords = fetch_coordinates(API_KEY, user_location)
+    coords = fetch_coordinates(api_key, user_location)
 
     coffee_dict = []
 
